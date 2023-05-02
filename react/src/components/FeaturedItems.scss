@@ -1,22 +1,19 @@
 @import '../styles/variables.scss';
 @import '../styles/mixins.scss';
 
-article {
-    display: flex;
-    flex-direction: column;
-}
 
-.cnt-header {
+h3,
+h4 {
     text-align: center;
 }
 
+.cnt-featured-items-widget {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: $common-margin auto;
 
-.cnt-top-banner {
-    display: inherit;
-    justify-content: center;
-    gap: 10%;
-
-    .top-box {
+    .item-info{
         display: inherit;
         flex-direction: column;
         align-items: center;
@@ -24,6 +21,5 @@ article {
         img {
             @include profile-image($profile-pic-medium)
         }
-
     }
 }

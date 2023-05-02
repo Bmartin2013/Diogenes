@@ -3,23 +3,22 @@ import "./FeaturedItems.scss"
 
 function FeaturedItems({ title, subtitle, items }) {
     return (
-        <article>
-            <div className="cnt-header">
-                <h3>{title}</h3>
-                <h5>{subtitle}</h5>
-            </div>
-            <div className="cnt-top-banner">
-                {items.map((item) => < FeaturedItem key={item.name}  {...item} />)}
-            </div>
-        </article>)
+        <section>
+            <h3>{title}</h3>
+            <h4>{subtitle}</h4>
+            <ul className="cnt-featured-items-widget">
+                {items.map((item) => <FeaturedItem key={item.name}  {...item} />)}
+            </ul>
+        </section>)
 }
 
 
 function FeaturedItem({ name, url }) {
-    return (<div className="top-box">
-        <img src={url} alt={name} />
-        <strong>{name}</strong>
-    </div>)
+    return (
+        <li className="item-info">
+            <img src={url} alt={name} />
+            <strong>{name}</strong>
+        </li>)
 }
 
 export default FeaturedItems;

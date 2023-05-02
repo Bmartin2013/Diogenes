@@ -5,7 +5,7 @@ import './Layout.scss'
 
 function Layout() {
   return (
-    <header>
+    <>
       <nav>
         <ul>
           <li>
@@ -18,7 +18,7 @@ function Layout() {
       </nav>
 
       <Outlet />
-    </header>
+    </>
   )
 };
 

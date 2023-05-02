@@ -1,5 +1,7 @@
+@import '../styles/variables.scss';
+
 .cnt-seller-post{
-    margin: 20px auto;
+    margin: $common-margin auto;
     display: flex;
     flex-direction: column;
     width: 80%;

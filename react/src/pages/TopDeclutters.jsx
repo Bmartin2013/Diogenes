@@ -1,10 +1,10 @@
 import React from "react"
 import SELLERS from '../db.json'
-import SellerFeed from "../components/SellerPost";
+import SellerPost from "../components/SellerPost";
 
 
 function TopDeclutters() {
-    return <> {SELLERS.map(seller => <SellerFeed seller={seller} />)} </>
+    return <> {SELLERS.map(seller => <ul><SellerPost seller={seller} /></ul>)} </>
 }
 
 

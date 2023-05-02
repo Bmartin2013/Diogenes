@@ -1,0 +1,29 @@
+article{
+display: flex;
+flex-direction: column;
+}
+
+.cnt-header{
+    text-align: center;
+}
+
+
+.cnt-top-banner{
+    display: inherit;
+    justify-content: center;
+    gap:10%;
+
+    .top-box{
+        display: inherit;
+        flex-direction: column;
+        align-items: center;
+    
+        img{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+       
+    }
+}
+

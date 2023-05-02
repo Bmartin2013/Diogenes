@@ -1,0 +1,23 @@
+.cnt-profile-summary {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+
+
+    .cnt-description {
+        display: inherit;
+        flex-direction: column;
+        margin: auto 20px;
+    }
+
+    .cnt-usr-info {
+        display: inherit;
+        align-items: center;
+
+        img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+        }
+    }
+}

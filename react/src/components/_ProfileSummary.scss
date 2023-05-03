@@ -1,7 +1,7 @@
-@import '../styles/mixins.scss';
-@import '../styles/variables.scss';
+@import '../styles/_mixins';
+@import '../styles/_variables';
 
-.cnt-profile-summary {
+header {
     display: flex;
     justify-content: space-between;
     margin: $common-margin 0;
@@ -18,7 +18,7 @@
         align-items: center;
 
         img {
-            @include profile-image
+            @include profile-image;
         }
     }
 }

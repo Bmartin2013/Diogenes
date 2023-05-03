@@ -1,0 +1,9 @@
+@import '../styles/_variables';
+@import '../styles/_mixins';
+
+.cnt-item-profile {
+    display: inherit;
+    flex-direction: column;
+    @include item-profile;
+    
+}

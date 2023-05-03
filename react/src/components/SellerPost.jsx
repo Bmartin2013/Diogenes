@@ -1,19 +1,13 @@
 import React from "react"
-import DeclutterSummary from "./ProfileSummary"
-import StuffProfile from "./ItemProfile"
-import './SellerPost.scss'
+import ProfileSummary from "./ProfileSummary"
+import ItemProfile from "./ItemProfile"
+import './_SellerPost'
 
 
-function SellerPost({ seller }) {
-    const { name, url, stuff, address } = seller
-
-    return <>
-        {stuff.map(item => 
-        <article className="cnt-seller-post">
-            <DeclutterSummary name={name} img={url} address={address} />
-            <StuffProfile item={item} />
-        </article>)}
-    </>
-}
+const SellerPost = ({ name, url, stuff, address }) => (stuff.map(item =>
+    <li className="cnt-seller-post">
+        <ProfileSummary name={name} img={url} address={address} />
+        <ItemProfile {...item} />
+    </li>))
 
 export default SellerPost;

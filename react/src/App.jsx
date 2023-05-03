@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home'
 import TopDeclutters from "./pages/TopDeclutters";
 import Layout from "./components/Layout";
-import './styles/app.scss'
+import './styles/_app'
 
 
 function App() {

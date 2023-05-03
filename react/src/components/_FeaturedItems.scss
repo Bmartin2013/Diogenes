@@ -1,0 +1,12 @@
+@import '../styles/_variables';
+@import '../styles/_mixins';
+
+
+ul.cnt-featured-items {
+    display: flex;
+    justify-content: space-evenly;
+    padding: $no-value;
+    margin: $common-margin auto;
+
+   @include featured-item-list;
+}

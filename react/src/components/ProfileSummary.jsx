@@ -1,19 +1,18 @@
 import React from "react";
-import './ProfileSummary.scss'
+import './_ProfileSummary'
 
 
-function ProfileSummary({ name, img, address }) {
-    return (
-        <div className="cnt-profile-summary">
-            <div className="cnt-usr-info">
-                <img src={img} alt={name} />
-                <div className="cnt-description">
-                    <strong>{name}</strong>
-                    <span>{address}</span>
-                </div>
+const ProfileSummary = ({ name, img, address }) => (
+    <header>
+        <div className="cnt-usr-info">
+            <img src={img} alt={name} />
+            <div className="cnt-description">
+                <strong>{name}</strong>
+                <span>{address}</span>
             </div>
-            <button>follow</button>
-        </div>);
-}
+        </div>
+        <button>follow</button>
+    </header>);
+
 
 export default ProfileSummary;

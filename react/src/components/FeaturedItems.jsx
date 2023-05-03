@@ -1,24 +1,22 @@
 import React from "react"
-import "./FeaturedItems.scss"
+import "./_FeaturedItems"
 
-function FeaturedItems({ title, subtitle, items }) {
-    return (
-        <section>
-            <h3>{title}</h3>
-            <h4>{subtitle}</h4>
-            <ul className="cnt-featured-items-widget">
-                {items.map((item) => <FeaturedItem key={item.name}  {...item} />)}
-            </ul>
-        </section>)
-}
+const FeaturedItems = ({ title, subtitle, items }) => (
+    <article>
+        <h3>{title}</h3>
+        <h4>{subtitle}</h4>
+        <ul className="cnt-featured-items">
+            {items.map((item) => <_FeaturedItem key={item.name}  {...item} />)}
+        </ul>
+    </article>
+)
 
 
-function FeaturedItem({ name, url }) {
-    return (
-        <li className="item-info">
-            <img src={url} alt={name} />
-            <strong>{name}</strong>
-        </li>)
-}
+const _FeaturedItem = ({ name, url }) => (
+    <li>
+        <img src={url} alt={name} />
+        <strong>{name}</strong>
+    </li>
+)
 
 export default FeaturedItems;
